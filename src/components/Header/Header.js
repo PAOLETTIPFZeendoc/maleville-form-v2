@@ -5,7 +5,6 @@ import {
   TableHead,
   TableRow,
   TextField,
-  useTheme,
 } from "@mui/material";
 import {
   AddressBlock,
@@ -25,7 +24,6 @@ const Header = ({
   projet,
   reference,
   setReference,
-  edit,
   NCommande,
 }) => {
   const { FirstName, LastName } = user;
