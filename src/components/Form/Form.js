@@ -19,9 +19,10 @@ const articleModele = {
   prix: "",
 };
 
-const Form = ({ fournisseurs, articles, articlesList, setArticlesList }) => {
+const Form = ({ articles, articlesList, setArticlesList }) => {
   useEffect(() => {
     setArticlesList([{ ...articleModele }]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleChangeItem = (index) => (e, newValue, reason) => {

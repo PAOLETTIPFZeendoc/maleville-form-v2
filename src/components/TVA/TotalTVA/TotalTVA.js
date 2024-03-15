@@ -16,6 +16,7 @@ const TotalTVA = ({ totaux, setTotaux, TVACalculator }) => {
       ...totaux,
       net: totalHorsPort.toFixed(2),
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [TVACalculator.TVA, TVACalculator.base, totaux.port]);
   const handleChangePort = (event) => {
     const { value } = event.target;
