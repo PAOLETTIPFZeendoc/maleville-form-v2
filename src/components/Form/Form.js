@@ -70,7 +70,6 @@ const Form = ({ fournisseurs, articles, articlesList, setArticlesList }) => {
       return option?.nom;
     },
   };
-
   return (
     <TableContainerStyled>
       <div style={{ display: "flex", justifyContent: "center" }}>

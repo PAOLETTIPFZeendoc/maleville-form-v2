@@ -142,7 +142,7 @@ const Header = ({
               }}
             />
           </div>
-          {Object.keys(fournisseur).length > 0 && (
+          {fournisseur && Object.keys(fournisseur).length > 0 && (
             <AddressBlock>
               <address>
                 {fournisseur.nom && <p>{fournisseur.nom}</p>}
